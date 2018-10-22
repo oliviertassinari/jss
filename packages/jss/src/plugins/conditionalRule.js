@@ -6,6 +6,7 @@ const defaultToStringOptions = {
   indent: 1,
   children: true
 }
+const id = Symbol.for('jss-conditional-rule-plugin')
 
 const atRegExp = /@([\w-]+)/
 
@@ -80,6 +81,7 @@ export class ConditionalRule implements ContainerRule {
 const keyRegExp = /@media|@supports\s+/
 
 export default {
+  id,
   onCreateRule(key: string, styles: JssStyle, options: RuleOptions): ConditionalRule | null {
     return keyRegExp.test(key) ? new ConditionalRule(key, styles, options) : null
   }

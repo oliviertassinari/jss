@@ -1,3 +1,4 @@
+import type {Plugin} from '../types'
 import pluginStyleRule, {StyleRule} from './styleRule'
 import pluginConditionalRule, {ConditionalRule} from './conditionalRule'
 import pluginKeyframesRule, {KeyframesRule} from './keyframesRule'
@@ -6,7 +7,7 @@ import pluginFontFaceRule, {FontFaceRule} from './fontFaceRule'
 import pluginViewportRule, {ViewportRule} from './viewportRule'
 import pluginSimpleRule, {SimpleRule} from './simpleRule'
 
-export const plugins = [
+export const plugins: Plugin[] = [
   pluginStyleRule,
   pluginConditionalRule,
   pluginKeyframesRule,

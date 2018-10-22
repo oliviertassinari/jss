@@ -1,6 +1,8 @@
 /* @flow */
 import type {CSSSimpleRule, RuleOptions, JssStyle, ToCssOptions, BaseRule} from '../types'
 
+const id = Symbol.for('jss-simple-rule-plugin')
+
 export class SimpleRule implements BaseRule {
   type = 'simple'
 
@@ -45,6 +47,7 @@ const keysMap = {
 }
 
 export default {
+  id,
   onCreateRule(key: string, value: JssStyle, options: RuleOptions): SimpleRule | null {
     return key in keysMap ? new SimpleRule(key, ((value: any): string), options) : null
   }

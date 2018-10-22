@@ -2,6 +2,8 @@
 import toCss from '../utils/toCss'
 import type {CSSFontFaceRule, RuleOptions, JssStyle, ToCssOptions, BaseRule} from '../types'
 
+const id = Symbol.for('jss-font-face-rule-plugin')
+
 export class FontFaceRule implements BaseRule {
   type = 'font-face'
 
@@ -41,6 +43,7 @@ export class FontFaceRule implements BaseRule {
 }
 
 export default {
+  id,
   onCreateRule(key: string, style: JssStyle, options: RuleOptions): FontFaceRule | null {
     return key === '@font-face' ? new FontFaceRule(key, style, options) : null
   }

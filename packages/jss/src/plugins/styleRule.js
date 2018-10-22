@@ -14,6 +14,8 @@ import type {
   BaseRule
 } from '../types'
 
+const id = Symbol.for('jss-style-rule-plugin')
+
 export class BaseStyleRule implements BaseRule {
   type = 'style'
 
@@ -161,6 +163,7 @@ export class StyleRule extends BaseStyleRule {
 }
 
 export default {
+  id,
   onCreateRule(name: string, style: JssStyle, options: RuleOptions): StyleRule | null {
     if (name[0] === '@' || (options.parent && options.parent.type === 'keyframes')) {
       return null

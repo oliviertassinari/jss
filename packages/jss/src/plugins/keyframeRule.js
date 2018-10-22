@@ -3,6 +3,8 @@ import toCss from '../utils/toCss'
 import type {JssStyle, RuleOptions, ToCssOptions, CSSKeyframeRule} from '../types'
 import {BaseStyleRule} from './styleRule'
 
+const id = Symbol.for('jss-keyframe-rule-plugin')
+
 export class KeyframeRule extends BaseStyleRule {
   renderable: ?CSSKeyframeRule
 
@@ -18,6 +20,7 @@ export class KeyframeRule extends BaseStyleRule {
 }
 
 export default {
+  id,
   onCreateRule(key: string, style: JssStyle, options: RuleOptions): KeyframeRule | null {
     if (options.parent && options.parent.type === 'keyframes') {
       return new KeyframeRule(key, style, options)

@@ -98,6 +98,7 @@ describe('Unit: jss', () => {
     it('should apply same plugin only once by id', () => {
       let called = 0
       const plugin = {
+        id: Symbol.for('id'),
         onCreateRule: () => {
           called++
         }

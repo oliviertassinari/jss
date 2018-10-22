@@ -16,6 +16,7 @@ const defaultToStringOptions = {
   indent: 1,
   children: true
 }
+const id = Symbol.for('jss-keyframes-rule-plugin')
 
 const nameRegExp = /@keyframes\s+([\w-]+)/
 
@@ -102,6 +103,7 @@ const replaceRef = (style: JssStyle, prop: string, keyframes: KeyframesMap) => {
 }
 
 export default {
+  id,
   onCreateRule(key: string, frames: JssStyle, options: RuleOptions): KeyframesRule | null {
     return keyRegExp.test(key) ? new KeyframesRule(key, frames, options) : null
   },
