@@ -130,6 +130,7 @@ export type OnChangeValue = (value: JssValue, prop: string, rule: StyleRule) => 
 export type OnUpdate = (data: Object, rule: Rule, sheet: StyleSheet, options: UpdateOptions) => void
 
 export type Plugin = {
+  id: Symbol,
   onCreateRule?: OnCreateRule,
   onProcessRule?: OnProcessRule,
   onProcessStyle?: OnProcessStyle,

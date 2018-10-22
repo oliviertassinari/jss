@@ -10,12 +10,14 @@ import {
 } from 'jss'
 import type {Observable} from './types'
 
+const id = Symbol.for('jss-plugin-syntax-rule-value-function')
 const isObservable = value => value && value[$$observable] && value === value[$$observable]()
 
 export type Options = UpdateOptions
 
 export default function observablePlugin(updateOptions?: Options) {
   return {
+    id,
     onCreateRule(name?: string, decl: JssStyle, options: RuleOptions): Rule | null {
       if (!isObservable(decl)) return null
 

@@ -3,6 +3,8 @@
 import type {Plugin, StyleRule} from 'jss'
 import {propArray, propArrayInObj, propObj, customPropObj} from './props'
 
+const id = Symbol.for('jss-plugin-syntax-expand')
+
 /**
  * Map values by given prop.
  *
@@ -180,5 +182,5 @@ export default function jssExpand(): Plugin {
     return styleDetector(style, ((rule: any): StyleRule))
   }
 
-  return {onProcessStyle}
+  return {id, onProcessStyle}
 }

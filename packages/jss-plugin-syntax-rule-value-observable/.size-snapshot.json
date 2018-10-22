@@ -1,30 +1,30 @@
 {
   "dist/jss-plugin-syntax-rule-value-observable.js": {
-    "bundled": 3510,
-    "minified": 1107,
-    "gzipped": 538
+    "bundled": 3609,
+    "minified": 1166,
+    "gzipped": 567
   },
   "dist/jss-plugin-syntax-rule-value-observable.min.js": {
-    "bundled": 3510,
-    "minified": 1107,
-    "gzipped": 538
+    "bundled": 3609,
+    "minified": 1166,
+    "gzipped": 567
   },
   "dist/jss-plugin-syntax-rule-value-observable.cjs.js": {
-    "bundled": 1709,
-    "minified": 754,
-    "gzipped": 399
+    "bundled": 1784,
+    "minified": 815,
+    "gzipped": 432
   },
   "dist/jss-plugin-syntax-rule-value-observable.esm.js": {
-    "bundled": 1495,
-    "minified": 591,
-    "gzipped": 318,
+    "bundled": 1570,
+    "minified": 652,
+    "gzipped": 352,
     "treeshaked": {
       "rollup": {
         "code": 38,
         "import_statements": 38
       },
       "webpack": {
-        "code": 1055
+        "code": 1107
       }
     }
   }

@@ -20,6 +20,7 @@ const initialsMap = {
   inherited: inheritedInitials,
   all: allInitials
 }
+const id = Symbol.for('jss-plugin-isolate')
 
 const getStyle = (option = 'inherited') => {
   // Option is either "inherited" or "all".
@@ -122,6 +123,7 @@ export default function jssIsolate(options: Options = {}): Plugin {
   }
 
   return {
+    id,
     onProcessRule,
     onProcessSheet
   }

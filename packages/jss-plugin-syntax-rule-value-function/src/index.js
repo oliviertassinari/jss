@@ -10,6 +10,7 @@ import {
 } from 'jss'
 
 // A symbol replacement.
+const id = Symbol.for('jss-plugin-syntax-rule-value-function')
 let now = Date.now()
 const fnValuesNs = `fnValues${now}`
 const fnRuleNs = `fnStyle${++now}`
@@ -18,6 +19,7 @@ type StyleRuleWithRuleFunction = StyleRule & {[key: string]: Function}
 
 export default function functionPlugin() {
   return {
+    id,
     onCreateRule(name?: string, decl: JssStyle, options: RuleOptions): Rule | null {
       if (typeof decl !== 'function') return null
       const rule: StyleRuleWithRuleFunction = (createRule(name, {}, options): any)

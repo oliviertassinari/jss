@@ -111,7 +111,9 @@ export default class PluginsRegistry {
     const plugins = this.plugins[options.queue]
 
     // Avoids applying same plugin twice, at least based on ref.
-    if (plugins.indexOf(newPlugin) !== -1) {
+    if (plugins.find(plugin => plugin.id === newPlugin.id)) {
+      warning(false, '[JSS] Tried applying the same plugin twice! This is currently not supported')
+
       return
     }
 
@@ -122,7 +124,9 @@ export default class PluginsRegistry {
         for (const name in plugin) {
           if (name in registry) {
             registry[name].push(plugin[name])
-          } else warning(false, '[JSS] Unknown hook "%s".', name)
+          } else {
+            warning(name === 'id', '[JSS] Unknown hook "%s".', name)
+          }
         }
         return registry
       },

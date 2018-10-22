@@ -2,6 +2,8 @@
 import type {Plugin} from 'jss'
 import hyphenate from 'hyphenate-style-name'
 
+const id = Symbol.for('jss-plugin-syntax-camel-case')
+
 /**
  * Convert camel cased property names to dash separated.
  *
@@ -53,5 +55,5 @@ export default function camelCase(): Plugin {
     return null
   }
 
-  return {onProcessStyle, onChangeValue}
+  return {id, onProcessStyle, onChangeValue}
 }

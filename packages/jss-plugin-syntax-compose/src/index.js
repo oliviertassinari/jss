@@ -2,6 +2,8 @@
 import warning from 'warning'
 import type {Plugin, StyleSheet} from 'jss'
 
+const id = Symbol.for('jss-plugin-syntax-compose')
+
 /**
  * Set selector.
  *
@@ -68,5 +70,5 @@ export default function jssCompose(): Plugin {
     delete style.composes
     return style
   }
-  return {onProcessStyle}
+  return {id, onProcessStyle}
 }

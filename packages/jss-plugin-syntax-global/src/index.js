@@ -8,6 +8,7 @@ import {
   type BaseRule
 } from 'jss'
 
+const id = Symbol.for('jss-plugin-syntax-global')
 const at = '@global'
 const atPrefix = '@global '
 
@@ -185,5 +186,5 @@ export default function jssGlobal(): Plugin {
     handlePrefixedGlobalRule(((rule: any): StyleRule))
   }
 
-  return {onCreateRule, onProcessRule}
+  return {id, onCreateRule, onProcessRule}
 }

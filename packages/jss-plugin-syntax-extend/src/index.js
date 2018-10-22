@@ -3,6 +3,7 @@
 import warning from 'warning'
 import type {Plugin} from 'jss'
 
+const id = Symbol.for('jss-plugin-syntax-extend')
 const isObject = obj => obj && typeof obj === 'object' && !Array.isArray(obj)
 const valueNs = `extendCurrValue${Date.now()}`
 
@@ -115,5 +116,5 @@ export default function jssExtend(): Plugin {
     return null
   }
 
-  return {onProcessStyle, onChangeValue}
+  return {id, onProcessStyle, onChangeValue}
 }

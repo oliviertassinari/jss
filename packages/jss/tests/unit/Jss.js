@@ -95,7 +95,7 @@ describe('Unit: jss', () => {
       expect(c2).to.be(true)
     })
 
-    it('should apply same plugin only once by ref', () => {
+    it('should apply same plugin only once by id', () => {
       let called = 0
       const plugin = {
         onCreateRule: () => {

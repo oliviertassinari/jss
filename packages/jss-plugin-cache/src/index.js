@@ -1,6 +1,8 @@
 // @flow
 import type {Plugin} from 'jss'
 
+const id = Symbol.for('jss-plugin-cache')
+
 export default function cachePlugin(): Plugin {
   const cache = new WeakMap()
 
@@ -22,5 +24,5 @@ export default function cachePlugin(): Plugin {
     if (!cache.get(originalStyle)) cache.set(originalStyle, rule)
   }
 
-  return {onCreateRule, onProcessRule}
+  return {id, onCreateRule, onProcessRule}
 }

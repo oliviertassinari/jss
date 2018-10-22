@@ -2,6 +2,8 @@
 import * as vendor from 'css-vendor'
 import {toCssValue, type Plugin, type KeyframesRule} from 'jss'
 
+const id = Symbol.for('jss-plugin-vendor-prefixer')
+
 /**
  * Add vendor prefix to a property name when needed.
  *
@@ -42,5 +44,5 @@ export default function jssVendorPrefixer(): Plugin {
     return vendor.supportedValue(prop, toCssValue(value)) || value
   }
 
-  return {onProcessRule, onProcessStyle, onChangeValue}
+  return {id, onProcessRule, onProcessStyle, onChangeValue}
 }

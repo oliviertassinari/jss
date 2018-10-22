@@ -2,6 +2,8 @@
 import type {Plugin} from 'jss'
 import defaultUnits from './defaultUnits'
 
+const id = Symbol.for('jss-plugin-syntax-default-unit')
+
 /**
  * Clones the object and adds a camel cased property version.
  */
@@ -84,5 +86,5 @@ export default function defaultUnit(options: Options = {}): Plugin {
     return iterate(prop, value, camelCasedOptions)
   }
 
-  return {onProcessStyle, onChangeValue}
+  return {id, onProcessStyle, onChangeValue}
 }

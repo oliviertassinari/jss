@@ -2,6 +2,7 @@
 import warning from 'warning'
 import type {Plugin, StyleRule, StyleSheet} from 'jss'
 
+const id = Symbol.for('jss-plugin-syntax-nested')
 const separatorRegExp = /\s*,\s*/g
 const parentRegExp = /&/g
 const refRegExp = /\$([\w-]+)/g
@@ -108,5 +109,5 @@ export default function jssNested(): Plugin {
     return style
   }
 
-  return {onProcessStyle}
+  return {id, onProcessStyle}
 }
