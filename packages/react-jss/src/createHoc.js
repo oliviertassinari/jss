@@ -252,6 +252,29 @@ export default function createHOC<
     }
   }
 
+  // $FlowFixMe
+  if (React.forwardRef) {
+    const contextSubscriber = React.forwardRef((props, ref) => (
+      <JssContext.Consumer>
+        {context => {
+          if (isThemingEnabled || injectTheme) {
+            return (
+              <ThemeConsumer>
+                {theme => <Jss theme={theme} {...context} {...props} innerRef={ref} />}
+              </ThemeConsumer>
+            )
+          }
+
+          return <Jss {...context} {...props} innerRef={ref} />
+        }}
+      </JssContext.Consumer>
+    ))
+
+    contextSubscriber.displayName = 'ContextSubscriber'
+
+    return contextSubscriber
+  }
+
   return function ContextSubscriber(props) {
     return (
       <JssContext.Consumer>
