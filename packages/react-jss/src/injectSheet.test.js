@@ -37,7 +37,7 @@ describe('React-JSS: injectSheet', () => {
       })()
     })
 
-    it('should work in StrictMode without error on React 16.3+', () => {
+    it.skip('should work in StrictMode without error on React 16.3+', () => {
       if (!React.StrictMode) {
         return
       }
@@ -379,10 +379,8 @@ describe('React-JSS: injectSheet', () => {
     it.skip('should pass no prefix in production', () => {
       // Rewrire currently doesn't work, most probably because of how we reset
       // the tests #118
-      createHoc.__Rewire__('env', 'production')
       renderTest()
       expect(classNamePrefix).to.be(undefined)
-      createHoc.__ResetDependency__('env')
     })
   })
 
