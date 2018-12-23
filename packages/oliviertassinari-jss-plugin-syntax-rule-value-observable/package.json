@@ -1,7 +1,7 @@
 {
   "name": "oliviertassinari-jss-plugin-syntax-rule-value-observable",
   "description": "JSS plugin for TC39 Observables support",
-  "version": "10.0.1-0",
+  "version": "10.0.2-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/",
   "main": "dist/jss-plugin-syntax-rule-value-observable.cjs.js",
@@ -46,7 +46,7 @@
     "oliviertassinari-jss": "^9.7.0"
   },
   "devDependencies": {
-    "oliviertassinari-jss": "^10.0.1-0"
+    "oliviertassinari-jss": "^10.0.2-0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

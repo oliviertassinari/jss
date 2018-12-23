@@ -1,7 +1,7 @@
 {
   "name": "oliviertassinari-jss-plugin-syntax-global",
   "description": "Global styles for JSS",
-  "version": "10.0.1-0",
+  "version": "10.0.2-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-global",
   "main": "dist/jss-plugin-syntax-global.cjs.js",
@@ -41,8 +41,8 @@
     "oliviertassinari-jss": "^9.0.0"
   },
   "devDependencies": {
-    "oliviertassinari-jss": "^10.0.1-0",
-    "oliviertassinari-jss-plugin-syntax-nested": "^10.0.1-0"
+    "oliviertassinari-jss": "^10.0.2-0",
+    "oliviertassinari-jss-plugin-syntax-nested": "^10.0.2-0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0"

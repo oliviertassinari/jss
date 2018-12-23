@@ -1,7 +1,7 @@
 {
   "name": "oliviertassinari-jss-plugin-syntax-compose",
   "description": "JSS plugin for classes composition",
-  "version": "10.0.1-0",
+  "version": "10.0.2-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-compose",
   "main": "dist/jss-plugin-syntax-compose.cjs.js",
@@ -38,7 +38,7 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "oliviertassinari-jss": "^10.0.1-0"
+    "oliviertassinari-jss": "^10.0.2-0"
   },
   "peerDependencies": {
     "oliviertassinari-jss": "^9.0.0"
