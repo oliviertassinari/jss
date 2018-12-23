@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-camel-case",
+  "name": "oliviertassinari-jss-plugin-syntax-camel-case",
   "description": "JSS plugin that allows to write camel cased rule properties",
-  "version": "6.1.0",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-camel-case",
   "main": "dist/jss-plugin-syntax-camel-case.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-camel-case.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Oleg Slobodskoi",
+    "name": "oliviertassinari-Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "camel case"
   ],
@@ -37,11 +37,11 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.7.0",
-    "jss-plugin-syntax-rule-value-function": "^0.1.0"
+    "oliviertassinari-jss": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-function": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.7.0"
+    "oliviertassinari-jss": "^9.7.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

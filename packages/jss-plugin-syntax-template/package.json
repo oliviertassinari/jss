@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-template",
+  "name": "oliviertassinari-jss-plugin-syntax-template",
   "description": "JSS plugin enables string templates",
-  "version": "1.0.1",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-template",
   "main": "dist/jss-plugin-syntax-template.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-template.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Oleg Slobodskoi",
+    "name": "oliviertassinari-Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "template"
   ],
@@ -37,10 +37,10 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^9.0.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

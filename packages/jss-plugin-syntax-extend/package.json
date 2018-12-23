@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-extend",
+  "name": "oliviertassinari-jss-plugin-syntax-extend",
   "description": "JSS plugin that enables mixing in styles.",
-  "version": "6.2.0",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-extend",
   "main": "dist/jss-plugin-syntax-extend.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-extend.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Oleg Slobodskoi",
+    "name": "oliviertassinari-Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
   },
   "repository": {
@@ -25,7 +25,7 @@
     "LICENSE"
   ],
   "keywords": [
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "extend",
     "css-in-js",
@@ -37,13 +37,13 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.7.0",
-    "jss-plugin-syntax-expand": "^5.1.0",
-    "jss-plugin-syntax-nested": "^6.0.1",
-    "jss-plugin-syntax-rule-value-function": "^0.1.0"
+    "oliviertassinari-jss": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-expand": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-nested": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-function": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.7.0"
+    "oliviertassinari-jss": "^9.7.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

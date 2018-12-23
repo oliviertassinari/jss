@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-default-unit",
+  "name": "oliviertassinari-jss-plugin-syntax-default-unit",
   "description": "JSS plugin that adds default custom unit to numeric values where needed",
-  "version": "8.0.2",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-default-unit",
   "main": "dist/jss-plugin-syntax-default-unit.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-default-unit.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Oleg Slobodskoi",
+    "name": "oliviertassinari-Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "px",
     "unit",
@@ -39,13 +39,13 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.4.0",
-    "jss-plugin-syntax-expand": "^5.3.0",
-    "jss-plugin-syntax-rule-value-function": "^0.1.0",
-    "jss-plugin-syntax-rule-value-observable": "^0.1.0"
+    "oliviertassinari-jss": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-expand": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-function": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-observable": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.4.0"
+    "oliviertassinari-jss": "^9.4.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0"

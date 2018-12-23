@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-nested",
+  "name": "oliviertassinari-jss-plugin-syntax-nested",
   "description": "JSS plugin that enables support for nested selectors",
-  "version": "6.0.1",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-nested",
   "main": "dist/jss-plugin-syntax-nested.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-nested.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Oleg Slobodskoi",
+    "name": "oliviertassinari-Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "nested",
     "nesting"
@@ -38,11 +38,11 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.0.0",
-    "jss-plugin-syntax-rule-value-function": "^0.1.0"
+    "oliviertassinari-jss": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-function": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^9.0.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

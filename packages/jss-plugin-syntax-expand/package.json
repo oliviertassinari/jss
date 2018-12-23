@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-expand",
+  "name": "oliviertassinari-jss-plugin-syntax-expand",
   "description": "JSS plugin that gives you a better syntax than CSS.",
-  "version": "5.3.0",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-expand",
   "main": "dist/jss-plugin-syntax-expand.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-expand.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Pavel Davydov",
+    "name": "oliviertassinari-Pavel Davydov",
     "email": "typical000@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "expand"
   ],
@@ -37,11 +37,11 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.4.0",
-    "jss-plugin-syntax-rule-value-observable": "^0.1.0"
+    "oliviertassinari-jss": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-observable": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.4.0"
+    "oliviertassinari-jss": "^9.4.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0"

@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-syntax-compose",
+  "name": "oliviertassinari-jss-plugin-syntax-compose",
   "description": "JSS plugin for classes composition",
-  "version": "5.0.0",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-compose",
   "main": "dist/jss-plugin-syntax-compose.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-syntax-compose.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Pavel Davydov",
+    "name": "oliviertassinari-Pavel Davydov",
     "email": "typical000@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinnjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "compose",
     "composition"
@@ -38,10 +38,10 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^9.0.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

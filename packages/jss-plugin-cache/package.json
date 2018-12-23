@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-cache",
+  "name": "oliviertassinari-jss-plugin-cache",
   "description": "JSS plugin that caches the rules and delivers insane performance.",
-  "version": "3.0.0",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-cache",
   "main": "dist/jss-plugin-cache.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-cache.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Oleg Slobodskoi",
+    "name": "oliviertassinari-Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "cache",
     "insane"
@@ -38,10 +38,10 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^9.0.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0"

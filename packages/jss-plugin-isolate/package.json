@@ -1,7 +1,7 @@
 {
-  "name": "jss-plugin-isolate",
+  "name": "oliviertassinari-jss-plugin-isolate",
   "description": "True rules isolation through automatic properties reset.",
-  "version": "5.1.0",
+  "version": "10.0.0-0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-isolate",
   "main": "dist/jss-plugin-isolate.cjs.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/jss-plugin-isolate.bundle.js",
   "typings": "./src/index.d.ts",
   "author": {
-    "name": "Maksim Koretskiy",
+    "name": "oliviertassinari-Maksim Koretskiy",
     "email": "mr.green.tv@gmail.com"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "cssinjs",
     "css-in-js",
     "css in js",
-    "jss",
+    "oliviertassinari-jss",
     "plugin",
     "isolation",
     "reset"
@@ -38,11 +38,11 @@
     "check-snapshot": "node ../../scripts/match-snapshot.js"
   },
   "devDependencies": {
-    "jss": "^9.0.0",
-    "jss-plugin-syntax-nested": "^6.0.0"
+    "oliviertassinari-jss": "^10.0.0-0",
+    "oliviertassinari-jss-plugin-syntax-nested": "^10.0.0-0"
   },
   "peerDependencies": {
-    "jss": "^9.0.0"
+    "oliviertassinari-jss": "^9.0.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
