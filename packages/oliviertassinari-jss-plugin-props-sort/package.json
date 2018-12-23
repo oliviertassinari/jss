@@ -1,0 +1,49 @@
+{
+  "name": "oliviertassinari-jss-plugin-props-sort",
+  "description": "JSS plugin that ensures style properties extend each other instead of override",
+  "version": "10.0.1-0",
+  "license": "MIT",
+  "homepage": "https://cssinjs.org/jss-props-sort",
+  "main": "dist/jss-plugin-props-sort.cjs.js",
+  "module": "dist/jss-plugin-props-sort.esm.js",
+  "unpkg": "dist/jss-plugin-props-sort.bundle.js",
+  "typings": "./src/index.d.ts",
+  "author": {
+    "name": "oliviertassinari-Oleg Slobodskoi",
+    "email": "oleg008@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cssinjs/jss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cssinjs/jss/issues/new?title=[jss-plugin-props-sort]"
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "keywords": [
+    "cssinjs",
+    "css-in-js",
+    "css in js",
+    "oliviertassinari-jss",
+    "plugin",
+    "sort",
+    "props"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build.js",
+    "check-snapshot": "node ../../scripts/match-snapshot.js"
+  },
+  "devDependencies": {
+    "oliviertassinari-jss": "^10.0.1-0"
+  },
+  "peerDependencies": {
+    "oliviertassinari-jss": "^9.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  }
+}

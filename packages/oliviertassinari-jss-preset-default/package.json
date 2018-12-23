@@ -1,0 +1,57 @@
+{
+  "name": "oliviertassinari-jss-preset-default",
+  "description": "Default preset for JSS with selected plugins.",
+  "version": "10.0.1-0",
+  "license": "MIT",
+  "homepage": "https://cssinjs.org/jss-preset-default",
+  "main": "dist/jss-preset-default.cjs.js",
+  "module": "dist/jss-preset-default.esm.js",
+  "unpkg": "dist/jss-preset-default.bundle.js",
+  "typings": "./src/index.d.ts",
+  "author": {
+    "name": "oliviertassinari-Oleg Slobodskoi",
+    "email": "oleg008@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cssinjs/jss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cssinjs/jss/issues/new?title=[jss-preset-default]"
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "keywords": [
+    "oliviertassinari-jss",
+    "preset",
+    "default"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build.js",
+    "check-snapshot": "node ../../scripts/match-snapshot.js"
+  },
+  "devDependencies": {
+    "oliviertassinari-jss": "^10.0.1-0"
+  },
+  "peerDependencies": {
+    "oliviertassinari-jss": "^9.7.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "oliviertassinari-jss-plugin-props-sort": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-camel-case": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-compose": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-default-unit": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-expand": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-extend": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-global": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-nested": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-function": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-observable": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-template": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-vendor-prefixer": "^10.0.1-0"
+  }
+}

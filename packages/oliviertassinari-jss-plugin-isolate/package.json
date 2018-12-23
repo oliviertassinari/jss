@@ -1,0 +1,51 @@
+{
+  "name": "oliviertassinari-jss-plugin-isolate",
+  "description": "True rules isolation through automatic properties reset.",
+  "version": "10.0.1-0",
+  "license": "MIT",
+  "homepage": "https://cssinjs.org/jss-isolate",
+  "main": "dist/jss-plugin-isolate.cjs.js",
+  "module": "dist/jss-plugin-isolate.esm.js",
+  "unpkg": "dist/jss-plugin-isolate.bundle.js",
+  "typings": "./src/index.d.ts",
+  "author": {
+    "name": "oliviertassinari-Maksim Koretskiy",
+    "email": "mr.green.tv@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cssinjs/jss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cssinjs/jss/issues/new?title=[jss-plugin-isolate]"
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "keywords": [
+    "cssinjs",
+    "css-in-js",
+    "css in js",
+    "oliviertassinari-jss",
+    "plugin",
+    "isolation",
+    "reset"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build.js",
+    "check-snapshot": "node ../../scripts/match-snapshot.js"
+  },
+  "devDependencies": {
+    "oliviertassinari-jss": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-nested": "^10.0.1-0"
+  },
+  "peerDependencies": {
+    "oliviertassinari-jss": "^9.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "css-initials": "^0.2.0"
+  }
+}

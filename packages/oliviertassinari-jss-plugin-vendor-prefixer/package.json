@@ -1,0 +1,49 @@
+{
+  "name": "oliviertassinari-jss-plugin-vendor-prefixer",
+  "description": "JSS plugin that handles vendor prefixes in the browser",
+  "version": "10.0.1-0",
+  "license": "MIT",
+  "homepage": "https://cssinjs.org/jss-vendor-prefixer",
+  "main": "dist/jss-plugin-vendor-prefixer.cjs.js",
+  "module": "dist/jss-plugin-vendor-prefixer.esm.js",
+  "unpkg": "dist/jss-plugin-vendor-prefixer.bundle.js",
+  "typings": "./src/index.d.ts",
+  "author": {
+    "name": "oliviertassinari-Oleg Slobodskoi",
+    "email": "oleg008@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cssinjs/jss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cssinjs/jss/issues/new?title=[jss-plugin-vendor-prefixer]"
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "keywords": [
+    "cssinjs",
+    "oliviertassinari-jss",
+    "plugin",
+    "vendor",
+    "prefixer"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build.js",
+    "check-snapshot": "node ../../scripts/match-snapshot.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "css-vendor": "^1.1.0"
+  },
+  "devDependencies": {
+    "oliviertassinari-jss": "^10.0.1-0",
+    "oliviertassinari-jss-plugin-syntax-rule-value-function": "^10.0.1-0"
+  },
+  "peerDependencies": {
+    "oliviertassinari-jss": "^9.5.0"
+  }
+}
